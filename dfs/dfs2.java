@@ -2,7 +2,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class dfs2 {
-
     private static int[] a;
     private static int[] nums;
     private static boolean[] b;
