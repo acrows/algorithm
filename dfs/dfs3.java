@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 public class dfs3 {
-    private static final int[] a = new int[5];
-    private static final boolean[] f = new boolean[5];
     private static final int[] b = new int[5];
     private static final int[] r = new int[5];
+    private static final int[] a = new int[5];
+    private static final boolean[] f = new boolean[5];
 
     private static void print(int k) {
         for (int i = 1; i <= k; i++) {
