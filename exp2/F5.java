@@ -22,7 +22,7 @@ public class F5 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNext()){
+        while (scanner.hasNext()) {
             int n = scanner.nextInt();
             System.out.print(fib(n));
         }

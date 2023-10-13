@@ -1,21 +1,22 @@
 import java.util.Scanner;
 
-public class dfs1 {
+public class E1 {
     private static int m;
-    private static final int N = 15;
-    private static final int[] a = new int[N];
-    private static final boolean[] b = new boolean[N];
 
-    private static void print() {
-        for (int i = 0; i < m; i++) {
-            System.out.print(a[i] + " ");
-        }
-        System.out.println();
-    }
+    private static final int N = 15;
+
+    private static final int[] a = new int[N];
+
+    private static final boolean[] b = new boolean[N];
+    private static int count = 0;
 
     private static void dfs(int x) {
         if (x == m) {
-            print();
+            for (int i = 0; i < m; i++) {
+                System.out.print(a[i] + " ");
+            }
+            System.out.println();
+            count++;
             return;
         }
         for (int i = 1; i <= m; i++) {
@@ -30,9 +31,10 @@ public class dfs1 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        while (scanner.hasNext()) {
-            m = scanner.nextInt();
-            dfs(0);
-        }
+        m = scanner.nextInt();
+        dfs(0);
+        System.out.println("Total=" + count);
     }
 }
+
+
